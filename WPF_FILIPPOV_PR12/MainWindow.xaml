@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="350"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <Image Source="res/unnamed.png" Width="80" Height="100"/>
+            <TextBlock Text="Канцелярские товары"/>
+        </StackPanel>
+        <Frame x:Name="FrmMain" NavigationUIVisibility="Hidden" Grid.Row="1">
+            
+        </Frame>
     </Grid>
 </Window>

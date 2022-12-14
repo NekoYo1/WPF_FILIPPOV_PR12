@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_FILIPPOV_PR12.NewFolder1;
+using WPF_FILIPPOV_PR12.PageMain;
 
 namespace WPF_FILIPPOV_PR12
 {
@@ -23,6 +25,10 @@ namespace WPF_FILIPPOV_PR12
         public MainWindow()
         {
             InitializeComponent();
+            AppConnect.model1 = new FILIPPOV_PR12Entities();
+            AppFrame.frameMain = FrmMain;
+
+            FrmMain.Navigate( new PageLogin());
         }
     }
 }
